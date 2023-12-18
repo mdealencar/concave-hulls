@@ -11,7 +11,7 @@ which was forked from:
 
 which is based on the paper:
 - Moreira, A. and Santos, M.Y., 2007, Concave Hull: A K-nearest neighbors approach for the computation of the region occupied by a set of points
-  https://pdfs.semanticscholar.org/2397/17005c3ebd5d6a42fc833daf97a0edee1ce4.pdf
+  (https://repositorium.sdum.uminho.pt/bitstream/1822/6429/1/ConcaveHull_ACM_MYS.pdf)
 
 Another implementation of the same method using `numpy` and `scipy`:
 - [sebastianbeyer/concavehull: build concave hull from points](https://github.com/sebastianbeyer/concavehull)
