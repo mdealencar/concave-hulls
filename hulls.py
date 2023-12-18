@@ -1,7 +1,5 @@
 import numpy as np
-from shapely.geometry import Point
-from shapely.geometry import asLineString
-from shapely.geometry import Polygon
+from shapely import Point, LineString, Polygon
 
 
 class ConcaveHull(object):
@@ -143,7 +141,7 @@ class ConcaveHull(object):
                 next_point = np.reshape(self.data_set[knn[candidate], :], (1, 2))
                 test_hull = np.append(hull, next_point, axis=0)
 
-                line = asLineString(test_hull)
+                line = LineString(test_hull)
                 invalid_hull = not line.is_simple  # invalid_hull will remain True for every candidate which creates a line that intersects the hull. as soon as the hull doesnt self intersect, it will become false and the loop will terminate
                 i += 1
 
